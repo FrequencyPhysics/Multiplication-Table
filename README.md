@@ -51,27 +51,26 @@ elif [ "$user" == "a" ]; then
 else
     echo "Invalid value, Please retry" # Informs the user to try again
 fi
-
-Usage
+```
+## Usage
 Make the script executable:
 
-bash
-Copy code
+```bash
 chmod +x script.sh
-Run the script:
+```
+# Run the script:
 
-bash
-Copy code
+```bash
 ./script.sh
-Follow the prompts:
+```
+# Follow the prompts:
 
 Enter a number when prompted.
 Choose the order of the multiplication table by entering 'a' for ascending or 'd' for descending.
-Example
-If you enter 5 and choose a, the output will be:
 
-css
-Copy code
+## Example
+If you enter 5 and choose a, the output will be:
+```
 Multiplication table for 5 in ascending order:
 5 x 1 = 5
 5 x 2 = 10
@@ -83,10 +82,10 @@ Multiplication table for 5 in ascending order:
 5 x 8 = 40
 5 x 9 = 45
 5 x 10 = 50
-If you choose d, the output will be:
+```
 
-css
-Copy code
+If you choose d, the output will be:
+```
 Multiplication table for 5 in descending order:
 5 x 10 = 50
 5 x 9 = 45
@@ -98,6 +97,7 @@ Multiplication table for 5 in descending order:
 5 x 3 = 15
 5 x 2 = 10
 5 x 1 = 5
+```
 Notes
 Ensure that the script has execution permissions.
 The script currently handles basic error checking for invalid inpu
