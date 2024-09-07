@@ -1,20 +1,24 @@
-Multiplication Table Generator
-Overview
+# Multiplication Table Generator
+
+## Overview
+
 This Bash script generates a multiplication table based on user input. It allows the user to specify a number and choose whether they want the table in ascending or descending order. The script also handles invalid input by prompting the user to try again.
 
-Script Details
-Functionality
-Prompt for Number: The script asks the user to enter a number.
-Prompt for Order: The user is then asked to choose the table order:
-Ascending [a]
-Descending [d]
-Generate Multiplication Table:
-Descending Order: Uses a list form for loop.
-Ascending Order: Uses a C-style for loop.
-Handle Invalid Input: If the user inputs anything other than 'a' or 'd', the script will prompt them to retry.
-Bash Script
-bash
-Copy code
+## Script Details
+
+### Functionality
+1. **Prompt for Number**: The script asks the user to enter a number.
+2. **Prompt for Order**: The user is then asked to choose the table order:
+   - **Ascending [a]**
+   - **Descending [d]**
+3. **Generate Multiplication Table**:
+   - **Descending Order**: Uses a list form `for` loop.
+   - **Ascending Order**: Uses a C-style `for` loop.
+4. **Handle Invalid Input**: If the user inputs anything other than 'a' or 'd', the script will prompt them to retry.
+
+### Bash Script
+
+```bash
 #!/bin/bash
 
 # Bash script for Generating a Multiplication Table
@@ -47,6 +51,7 @@ elif [ "$user" == "a" ]; then
 else
     echo "Invalid value, Please retry" # Informs the user to try again
 fi
+
 Usage
 Make the script executable:
 
@@ -95,4 +100,4 @@ Multiplication table for 5 in descending order:
 5 x 1 = 5
 Notes
 Ensure that the script has execution permissions.
-The script currently handles basic error checking for invalid inputs
+The script currently handles basic error checking for invalid inpu
