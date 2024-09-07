@@ -19,38 +19,8 @@ This Bash script generates a multiplication table based on user input. It allows
 ### Bash Script
 
 ```bash
-#!/bin/bash
+![image](https://github.com/user-attachments/assets/a07b49e9-ca26-4935-8573-143fa97380b2)
 
-# Bash script for Generating a Multiplication Table
-
-# Asks the user to enter a number
-read -p "Enter a number: " num
-
-# Asks the user to choose the table order (ascending or descending)
-read -p "Would you like the table in ascending [a] or descending [d] order? " user
-
-# Checks if user wants the table in descending order
-if [ "$user" == "d" ]; then
-    echo "Multiplication table for $num in descending order:"
-    # List form for loop to generate multiplication table from 10 to 1
-    for i in {10..1}; do
-        result=$((num * i)) # Perform multiplication
-        echo "$num x $i = $result" # Print result
-    done
-
-# Checks if the user wants the table in ascending order
-elif [ "$user" == "a" ]; then
-    echo "Multiplication table for $num in ascending order:"
-    # C-style for loop to generate multiplication table from 1 to 10
-    for ((i = 1; i <= 10; i++)); do
-        result=$((num * i)) # Perform multiplication
-        echo "$num x $i = $result" # Print result
-    done
-
-# Else statement to handle invalid user input
-else
-    echo "Invalid value, Please retry" # Informs the user to try again
-fi
 ```
 ## Usage
 Make the script executable:
